@@ -65,7 +65,7 @@ class MY_Log extends CI_Log {
      * @param   bool    whether the error is a native PHP error
      * @return  bool
      */
-    public function write_log($level = 'error', $msg, $php_error = FALSE)
+    public function write_log($level, $msg, $php_error = FALSE)
     {
         $level = strtoupper($level);
 
