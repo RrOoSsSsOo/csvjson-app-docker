@@ -18,7 +18,8 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-if (strpos($_SERVER['SERVER_NAME'], 'localhost') !== FALSE) {
+if (strpos($_SERVER['SERVER_NAME'], 'localhost') !== FALSE || 
+	strpos($_SERVER['SERVER_NAME'], '127.0.0.1') !== FALSE ) {
 	define('ENVIRONMENT', 'production');
 } else {
 	define('ENVIRONMENT', 'development');
